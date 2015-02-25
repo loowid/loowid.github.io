@@ -13,8 +13,8 @@
     <link type="text/plain" rel="author" href="/humans.txt">
     <link href="http://fonts.googleapis.com/css?family=Noto+Sans|Source+Sans+Pro:300|Inconsolata" rel="stylesheet" type="text/css">
 </head>
-<body>
-	<header class="docs">
+<body class="docs">
+	<header>
 		<nav>
 			<ul id="navigation">
 
@@ -200,6 +200,8 @@ If participant accepts those files you’ll start sending them directly from bro
 <p><img alt="YouTube Videos on chat" src="https://raw.githubusercontent.com/loowid/loowid-doc/master/images/howtouse/19-youtube-chat.png"/>
 	</p></section>
 <section class="entry">
+<h1>LooWID&#39;s communication stack</h1>
+
 <p>As said before on this wiki LooWID is a web video conferencing platform based on <strong>WebRTC</strong> that uses <strong>peer-to-peer connections</strong> to send video and audio directly from browser to browser. Although WebRTC let browsers exchange data between peers, some servers are needed. As we saw before signaling and room management is done in LooWID, but there are other services needed to help WebRTC to <strong>work throughout NAT</strong>. At this point <strong><a href="http://tools.ietf.org/html/rfc5245">ICE</a></strong>,  <strong><a href="http://tools.ietf.org/html/rfc5245">STUN</a></strong> and <strong><a href="http://tools.ietf.org/html/rfc5766">TURN</a></strong>  start to play.  ICE framework uses STUN and TURN to establish a connection (RTCPeerConnection) through any NAT variety.  ICE tries to connect to peers directly via UDP. STUN server tries to find the public address and port. If UDP fails, ICE tries TCP.</p>
 
 <p><img alt="LooWID&#39;s STUN connections diagram" src="https://raw.githubusercontent.com/loowid/loowid-doc/master/images/stunturn/diagram1.png"/></p>
@@ -218,6 +220,8 @@ XIRSYS_USER=&lt;xyrsys usename&gt;
 XIRSYS_SECRET=&lt;xyrsys password&gt;
 </code></p></section>
 <section class="entry">
+<h1>Run on own server</h1>
+
 <p><a href="http://stackshare.io/loowid/loowid">LooWID stack</a> is based in the following technologies:</p>
 
 <p>Development frameworks:
@@ -344,6 +348,8 @@ MONGOLAB_URI=&lt;MongoDB URI&gt;
 MONGOHQ_URL=&lt;MongoDB URL&gt;
 </code></p></li></ol></section>
 <section class="entry">
+<h1>Setting up IMS LTI connection</h1>
+
 <p>Maybe you want to use your LooWID server for education and you&#39;d like to use it with the LMS (Learning Management System) of your institution. You are lucky because LooWID has the ability to communicate with those systems like Moodle, Sakai, Canvas, Blackboard, Drupal... using the standard <strong>IMS LTI (IMS Learning Tool Interoperability) v1.1</strong></p>
 
 <h2>What is IMS LTI?</h2>
@@ -376,6 +382,8 @@ LTI_OWNER_ROLES=&lt;lti-owner-role1&gt;,&lt;lti-owner-role2&gt;,...
 
 <ul><li><a href="https://trunk-oracle.nightly.sakaiproject.org/portal/help/TOCDisplay/content.hlp?docId=howdoiconfiguretheexternaltoolltisettings">How to configure an external tool in Sakai</a></li><li><a href="https://docs.moodle.org/22/en/External_tool_settings">How to configure an external tool on Moodle</a></li><li><a href="http://www.edu-apps.org/tutorials.html#canvas">How to configure an external tool on Canvas</a></li></ul></section>
 <section class="entry">
+<h1>LooWID translations</h1>
+
 <p>Now LooWID is * translated to 4 languages, Catalan, English, German and Spanish. The language of the LooWID interface changes depending on browser preferences. </p>
 
 <p>We use an external application to handle all the translations of LooWID. It&#39;s another opensource project called <strong><a href="https://github.com/nijel/weblate">Weblate</a></strong>. We run on a hosted server offered by Weblate people, there you will find another opensource projects to participate with.</p>
