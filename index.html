@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+
+    <title>LooWID, Look what I'm doing</title>
+
+    <link rel="stylesheet" href="css/screen.css">
+
+    <link rel="shortcut icon" href="/icon.png">
+    <link rel="apple-touch-icon-precomposed" href="/icon.png">
+    <link type="text/plain" rel="author" href="/humans.txt">
+    <link href="http://fonts.googleapis.com/css?family=Noto+Sans|Source+Sans+Pro:300|Inconsolata" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<header class="docs">
+		<nav>
+			<ul id="navigation">
+
+			</ul>
+		</nav>
+	</header>
+	<main id="docs"><section class="entry">
+<h1>LooWID Project</h1>
+
+<p>LooWID is an open source project that provides a way to perform video conversations (audio and video streaming) and sharing their desktop windows with other people using web browsers. You can build your own instance or access to this service through www.loowid.com.</p>
+
+<p>In order to use the platform you must create a room and then send or share the unique URL provided by the service to let other people join the conversation. The method to send the URL must be done out of the www.loowid.com. It could be done sharing by email, twitter, facebook, etc. Each person that opens the URL in the browser will enter to the room and see and listen everything that would be streamed in the room.</p>
+
+<p>Nobody has to register or install nothing in your computer, just access to the URL with the browser.</p>
+
+<p><img alt="" src="https://github.com/loowid/loowid-doc/blob/master/images/platform.png"/></p>
+
+<h2>Sections</h2>
+
+<p>To learn more about LooWID see the following sections:</p>
+
+<ul><li><a href="https://github.com/loowid/loowid/wiki/How-to-use-it">How to use it</a></li><li><a href="https://github.com/loowid/loowid/wiki/Run-your-own-server">Run your own server</a></li><li>[LooWID&#39;s communication stack](https://github.com/loowid/loowid/wiki/LooWID&#39;s-communication-stack)</li><li><a href="https://github.com/loowid/loowid/wiki/Setting-up-IMS-LTI-connection">Setting up LTI connection</a></li><li><a href="https://github.com/loowid/loowid/wiki/Translate-LooWID">Translate</a></li></ul></section>
+<section class="entry">
+<h1>Getting started</h1>
+
+<p>Once you acceded to www.loowid.com or your own LooWID instance, you&#39;ll find the landing page screen. You can choose your hero name, write yours or select another aleatory name clicking on the hero&#39;s face. Also you&#39;ll find a link to the terms of service. They must be accepted to create the room. Once you got the desired name Click on &quot;LooWID now&quot; button.</p>
+
+<p><img alt="landing page access" src="https://raw.githubusercontent.com/loowid/loowid-doc/master/images/howtouse/1-landing.png"/></p>
+
+<p>After some seconds your LooWID room will be available. Congratulations you are a new <strong>room owner</strong>. If it’s the first time you enter to the room, you will be asked to grant <strong>Notification permission</strong>. It’s recommendable you accept it, but we’ll talk about them later. </p>
+
+<p><img alt="Notification permission" src="https://raw.githubusercontent.com/loowid/loowid-doc/master/images/howtouse/2-noti-permis.png"/></p>
+
+<p>In the room you&#39;ll see the following elements:</p>
+
+<h3>Main Media Area</h3>
+
+<p>Here you’ll have all participant’s <strong>media windows</strong>. You’ll be able to <strong>move</strong> and <strong>resize</strong> each window for all this area.</p>
+
+<h3>Control Bar</h3>
+
+<p>In this bar you’ll find the buttons to <strong>activate desktop, video, and audio capture</strong>. There are also buttons to access to the <strong>room configuration</strong> (as room owner) and the audio alerts activation (just in case you blocked Notifications on desktop). At the right of this bar you’ll see the button to <strong>leave the room</strong>.</p>
+
+<h3>Connections status panel</h3>
+
+<p>At the left of the room, you’ll have the <strong>list of participants</strong> in the conversation. This list will be useful to perform actions with users like sharing files, change profile information, ask for sharing a participant device, and eject whoever you want.</p>
+
+<h3>Chat panel</h3>
+
+<p>There is a chat to write messages to the other participants. Particularly useful when owner handles the session and the others maintain their microphones off.</p>
+
+<p>Both panels, connections and chat, can be collapsed to get a bigger video area, pressing the arrows that are at the top of each one.</p>
+
+<p><img alt="LooWID components" src="https://raw.githubusercontent.com/loowid/loowid-doc/master/images/howtouse/3-app-components.png"/></p>
+
+<h2>Start your meeting</h2>
+
+<h3>Share the URL</h3>
+
+<p>The <strong>first thing to do</strong> is share/send the URL of your room. You’ll find at the center of the Main Media Area, or on the Control Bar.  Click with right-button and <strong>copy the URL and spread it with your guests</strong>. </p>
+
+<p>As soon they connect to connect to the room they will be appearing in the Connections panel. Note that if they’ve never run LooWID they will be show with an aleatory superhero name, and default image. You and your guest can change this information clicking in the image, but we’ll see in detail later.</p>
+
+<h3>Stream your media</h3>
+
+<p>It’s time to stream your media (webcam, audio or desktop). Click on the buttons of the head control bar to star. Note that <strong>first time browser will ask for permission</strong> to capture audio or video from your devices. You must accept to go on.</p>
+
+<p><img alt="media permission" src="https://raw.githubusercontent.com/loowid/loowid-doc/master/images/howtouse/4-video-perm.png"/></p>
+
+<p>You can use the same buttons to stop sharing or just close the window. Audio is not activated by default with the cam, so you must remember to activate it also. We will see more details about sharing desktop below.</p>
+
+<p><img alt="stop sharing media" src="https://raw.githubusercontent.com/loowid/loowid-doc/master/images/howtouse/5-stop-sharing.png"/></p>
+
+<h3>Viewer participants</h3>
+
+<p>When some of your guest shares his video, a window is opened automatically in your Media Area. You can ask them for sharing but let’s see it below when we talk about room options. As owner you’ll be able to <strong>eject</strong> from the room and <strong>send files</strong> to them. There are two buttons for each guest to do that.</p>
+
+<p><img alt="eject and send files buttons" src="https://raw.githubusercontent.com/loowid/loowid-doc/master/images/howtouse/6-user-buttons.png"/></p>
+
+<h3>Send files</h3>
+
+<p>To send a file click on the <strong>cloud icon</strong> of participant who you want to send and select the files.
+If participant accepts those files you’ll start sending them directly from browser to browser. Once you started an upload, you can cancel it. When file transfer raises to 100% participant will be able to open or download the file to his hard-drive. </p>
+
+<p><img alt="Share file controls" src="https://raw.githubusercontent.com/loowid/loowid-doc/master/images/howtouse/7-file-status.png"/></p>
+
+<p>Now that you know the main elements, let’s talk of some options you can configure of your room. </p>
+
+<h3>Change your information</h3>
+
+<p>Participants can change their names and pictures. To change your information click on your pictures at Connection status panel and enter your name and your email. Picture is get from <a href="http://www.gravatar.com">Gravatar</a> profile, be sure that you write the email address registered in your <a href="http://www.gravatar.com">Gravatar</a> account. </p>
+
+<p><img alt="Set up your information" src="https://raw.githubusercontent.com/loowid/loowid-doc/master/images/howtouse/20-change-name.png"/> </p>
+
+<h2>Room configuration</h2>
+
+<p>As I explained above, you’ll see the options button in the top header bar. The main options you can configure are:</p>
+
+<p><img alt="Options menu" src="https://raw.githubusercontent.com/loowid/loowid-doc/master/images/howtouse/8-options.png"/></p>
+
+<h3>Title</h3>
+
+<p>You can set a title for the room, it will be shown at control bar at the left of the room&#39;s URL.</p>
+
+<h3>Standing room</h3>
+
+<p>By default when you create a room is volatile. It means that when you (owner) exits, the room is destroyed and can’t be acceded again. Maybe you need to have a room for some time. Mark this options and the room will be <strong>active for some time (15 days)</strong>. That would help you to plan a meeting and share the URL with participants some time before.</p>
+
+<p>When you configure the room as standing room a card with an <strong>URL address</strong> will be show. This address is the one that <strong>let you come back to the room as owner</strong>. </p>
+
+<p><img alt="Standing room card" src="https://raw.githubusercontent.com/loowid/loowid-doc/master/images/howtouse/9-standing-card.png"/></p>
+
+<p>Take care about the room won’t be active unless the owner is not present. Remember to save that URL in a safe place because if you lose it you’ll not be able to access and the room will be lost.</p>
+
+<h3>Moderate room</h3>
+
+<p>This options allow you to handle room as moderator. By default all participants of the room can share their media without permission, but there are some scenarios where you would prefer to select <strong>who and when can share their media</strong>. If you select this options users won’t have the <strong>sharing buttons</strong> in the head bar, instead they could ask for sharing pressing the icons below their user in connections status bar. If you accept the request they’ll share the media. At same time you can initiate and ask to specific viewer to share a media (video, audio or desktop).</p>
+
+<p><img alt="Ask to share icons" src="https://raw.githubusercontent.com/loowid/loowid-doc/master/images/howtouse/10-ask-share.png"/></p>
+
+<h3>Chat disabled</h3>
+
+<p>If you want to be the only person who can write to the chat, mark this option. Useful if you want to <strong>write some instructions</strong> before the session starts. You can enable again in any moment of the session.</p>
+
+<p><img alt="Chat in viewer" src="https://raw.githubusercontent.com/loowid/loowid-doc/master/images/howtouse/11-chat-disabled.png"/></p>
+
+<h3>Lock room</h3>
+
+<p>Maybe you are not interested in allow to access more people to your room. When this option is selected <strong>users that aren&#39;t yet in the room won’t be able to access</strong>. </p>
+
+<h3>Access permission.</h3>
+
+<p>By default someone with the link of the room would be able to access it when owner is in it. If you want to add an <strong>extra security</strong> access step can protect your room with a password. Once guests access to the room URL <strong>password</strong> will be asked. Just those who know it will enter.</p>
+
+<p><img alt="Password request" src="https://raw.githubusercontent.com/loowid/loowid-doc/master/images/howtouse/12-pasword.png"/></p>
+
+<h2>Sharing your desktop</h2>
+
+<p>Share desktop, just now, is a feature that <strong>is only available if you are using Chrome</strong> on a Mac, Windows or Linux. In order to do that you will also need to install a Chrome extension. The easiest way to do that is:</p>
+
+<p><strong>1- Click on “Share desktop” button</strong>. A message will appear at the bottom of the screen telling about installing this extension. At the end of the message you’ll see the link to the Chrome store to the loowid extension.</p>
+
+<p><img alt="Alert that you don&#39;t have installed the extension" src="https://raw.githubusercontent.com/loowid/loowid-doc/master/images/howtouse/13-extension-alert.png"/></p>
+
+<p><strong>2- Follow the link, and install the extension.</strong></p>
+
+<p><img alt="Install the extension" src="https://raw.githubusercontent.com/loowid/loowid-doc/master/images/howtouse/14-install-extension.png"/>	</p>
+
+<p><strong>3- Press the reload browser’s button</strong> or just press F5.</p>
+
+<p><strong>4- Press again the share desktop button.</strong> After some seconds the extension will ask you what to share. You can choose between full desktop or a single window. </p>
+
+<p><img alt="Select the window to share" src="https://raw.githubusercontent.com/loowid/loowid-doc/master/images/howtouse/15-select-window.png"/></p>
+
+<p>Selecting the window of your slides would be a valid option to do an online presentation. </p>
+
+<h2>Using the chat</h2>
+
+<p>Your room’s chat can be used for many purposes. We’ve already seen how to disable the chat from options, but it will be an useful tool to let guest participate in the session, specially when you are not seeing the rooms page. </p>
+
+<h3>Notifications</h3>
+
+<p>As I explained before when you access to the room browser requests you permission to access to Notification. That means that browser can show you Notifications even if you don’t have the focus on the room page.  When you accept messages in your desktop will be displayed when people enter and exits of the room or writes in the chat. </p>
+
+<p><img alt="Notification shown while you are doing a presentation" src="https://raw.githubusercontent.com/loowid/loowid-doc/master/images/howtouse/16-question.png"/></p>
+
+<p>If you don’t want that kind of notifications (maybe you want to share your full desktop and don’t want to show that notifications) you can’t either don’t accept the notification permission when browser asks for them or disabling on browser any time. </p>
+
+<p><img alt="Disable notifications" src="https://raw.githubusercontent.com/loowid/loowid-doc/master/images/howtouse/17-block-noti.png"/></p>
+
+<h3>Audio notifications</h3>
+
+<p>If you don’t allow Notifications audio notifications will be enabled.  </p>
+
+<p>Once you disabled Notifications chat messages are spoken when room is not focused or chat is collapsed. It’s an alternative mechanism to be alerted from your guest  (questions, suggestions, …) when you are not looking to the chat. This is a common situation if you are doing are explaining something sharing an application window. You can either disable that feature pressing the bell icon at the head controls bar. </p>
+
+<p><img alt="Disable audio alerts " src="https://raw.githubusercontent.com/loowid/loowid-doc/master/images/howtouse/18-audio-notification.png"/></p>
+
+<h3>Play videos in the chat</h3>
+
+<p>You can also use chat to share YouTube videos and play them on a window. Just type a video&#39;s URL in the chat and send it. Everybody will see the video preview in the chat panel. When a participant click on the preview the YouTube video will be opened in a window. </p>
+
+<p><img alt="YouTube Videos on chat" src="https://raw.githubusercontent.com/loowid/loowid-doc/master/images/howtouse/19-youtube-chat.png"/>
+	</p></section>
+<section class="entry">
+<p>As said before on this wiki LooWID is a web video conferencing platform based on <strong>WebRTC</strong> that uses <strong>peer-to-peer connections</strong> to send video and audio directly from browser to browser. Although WebRTC let browsers exchange data between peers, some servers are needed. As we saw before signaling and room management is done in LooWID, but there are other services needed to help WebRTC to <strong>work throughout NAT</strong>. At this point <strong><a href="http://tools.ietf.org/html/rfc5245">ICE</a></strong>,  <strong><a href="http://tools.ietf.org/html/rfc5245">STUN</a></strong> and <strong><a href="http://tools.ietf.org/html/rfc5766">TURN</a></strong>  start to play.  ICE framework uses STUN and TURN to establish a connection (RTCPeerConnection) through any NAT variety.  ICE tries to connect to peers directly via UDP. STUN server tries to find the public address and port. If UDP fails, ICE tries TCP.</p>
+
+<p><img alt="LooWID&#39;s STUN connections diagram" src="https://raw.githubusercontent.com/loowid/loowid-doc/master/images/stunturn/diagram1.png"/></p>
+
+<p>If finally communication is not possible (firewalls, restrictive NAT… ) then ICE relays on a TURN server to perform the data exchange.</p>
+
+<p><img alt="LooWID&#39;s TURN connection diagram" src="https://raw.githubusercontent.com/loowid/loowid-doc/master/images/stunturn/diagram2.png"/></p>
+
+<p>By default, LooWID uses generic STUN servers from Google, but it would be recommended that if you  are planing to run your own server use a set of you own.</p>
+
+<p>In order to simplify configuration we added support to configure a <a href="https://xirsys.com/pricing/">Xirsys account</a>. They provide an authenticated STUN/TURN service on the cloud. Once you set up your account and service you only need to configure the following environment variables:</p>
+
+<p><code>
+XIRSYS_DOMAIN=&lt;xyrsis domain&gt;
+XIRSYS_USER=&lt;xyrsys usename&gt;
+XIRSYS_SECRET=&lt;xyrsys password&gt;
+</code></p></section>
+<section class="entry">
+<p><a href="http://stackshare.io/loowid/loowid">LooWID stack</a> is based in the following technologies:</p>
+
+<p>Development frameworks:
+<em> NodeJS
+</em> Express
+<em> MongoDB
+</em> AngularJS
+<em> WebRTC
+</em> LESS</p>
+
+<p>We also use some technologies to simplipfy all the development process:
+<em> Grunt
+</em> npm
+<em> JSHint
+</em> git</p>
+
+<h2>How to Install</h2>
+
+<p>The first you need to do is install nodeJS, git and mongodb. Take a look to these tutorials to know how to do it in your SO:
+<em> <a href="Install git client">http://git-scm.com/book/en/v2/Getting-Started-Installing-Git</a>
+</em> <a href="http://docs.mongodb.org/manual/installation/">Install MongoDB</a>
+* <a href="Install nodeJS">http://nodejs.org/</a></p>
+
+<p>Now download LooWID source code with git client from a system console</p>
+
+<pre><code>  `git clone https://github.com/loowid/loowid /install/dir`</code></pre>
+
+<p>Once you&#39;ve got the code, we recommend to install a cert. If you want it for a valid domain you can get one from <code> http://www.cert-depot.com/</code> , but you can also run it with self-signed one. Save them as private.pem and public.pem in the root app directory.</p>
+
+<p>If there isn&#39;t certificate available loowid startup in http port.   When https port is running, http port is used only to redirect to https port. </p>
+
+<p>Now, you can install all the stuff necessary to run the LooWID, just execute the following commands:</p>
+
+<ul><li><code>npm install --production</code></li><li><code>npm start</code></li></ul>
+
+<p>Ready to run:</p>
+
+<p>  Connect to https://localhost/ or https://your-domain/ and enjoy!</p>
+
+<p><strong>Note</strong>: If you want to work with the <strong>latest stable release</strong> then you must clone  https://github.com/loowid/loowid/tree/1.1.0</p>
+
+<h2>Docker</h2>
+
+<p>  If you feel that there are to many steps to install loowid you can run our <a href="Docker">https://www.docker.com/whatisdocker/</a>image. You can find it at</p>
+
+<p>  https://github.com/loowid/loowid-docker</p>
+
+<p>or in the docker&#39;s public repository</p>
+
+<p>  https://registry.hub.docker.com/u/loowid/loowid/</p>
+
+<p>Previously you&#39;ll need to install Docker in your server: <a href="How to install docker">https://docs.docker.com/installation/#installation</a>. </p>
+
+<h2>Run it for development</h2>
+
+<p>The steps are the same that in production but you have to remove <code>--production</code> in the <code>npm install --production</code> step and start LooWID with the command <code>grunt</code> </p>
+
+<p>You have several options to use with <code>grunt</code>:</p>
+
+<p><code>grunt</code> (Default development server)</p>
+
+<pre><code> * `grunt cluster`	: Run cluster server with 2 nodes (--nodes=N change default value)
+ * `grunt prod`		: Run production environment do not watch for code changes
+ * `grunt test`		: Run unit tests
+
+ ```
+ Use --port=80 --sport=443 --bport=8000 to change default port values.
+ And --mongodb=off to don&#39;t startup mongodb and provide it independently
+ ```
+ ```
+ grunt cluster --sport=9090 --port=8080 --bport=7000 --nodes=3 
+ listen in ports 8080, 7001, 7002, 7003 (http) and 9090 (https).
+ ```
+ ```
+ grunt --port=8080 
+ will listen in ports 443 (https) and 8080 (http).
+ ```
+ ```
+ grunt --mongodb=off 
+ won&#39;t startup mongodb
+ ```</code></pre>
+
+<p><strong>Note:</strong> If you get some npm packages errors try <code>npm update</code> (We had that errors on Windows 7 64bits)</p>
+
+<h2>Configuration</h2>
+
+<p>  There are some environment variables you may set to configure your loowid deployment. 
+  Check your hosting provider documentation in order to know how to set this values, for example, with openshift you can type:
+  <code>
+  	rhc env set VARIABLE=VALUE -a app
+  </code>
+if you run in linux you can set them using: </p>
+
+<p><code>
+ export VARIABLE=VALUE
+</code></p>
+
+<ol><li><p>Credentials to access to some admin resources (debug level and stats). By default admin/admin.</p><p><code>
+ADMIN_USERNAME=&lt;your-admin-username&gt;
+ADMIN_PASSWORD=&lt;your-admin-password&gt;
+</code></p></li><li><p>Chrome plugin extension id. Set the id of your own plugin extension for screen sharing. A generic domain plugin will be used by default.</p><p><code>
+CEXTID=&lt;generic-domain-plugin-id&gt;
+</code></p></li><li><p>Enable [STUN/TURN service](https://github.com/loowid/loowid/wiki/LooWID&#39;s-communication-stack) on <a href="https://xirsys.com/">XirSys</a>.</p><p><code>
+XIRSYS_DOMAIN=&lt;xyrsis domain&gt;
+XIRSYS_USER=&lt;xyrsys usename&gt;
+XIRSYS_SECRET=&lt;xyrsys password&gt;
+</code></p></li><li><p>Room timeout. The number of days that a room can be active on the server before expires (15 days by default).</p><p><code>
+ROOM_TIMEOUT=15
+</code></p></li><li><p>Path to certificate files. By default <code>public.pem</code> and <code>private.pem</code> in the same folder, you could set the full path to your own certificate files.</p><p><code>
+PUBLIC_KEY=&lt;path-to-your-cert-public.pem&gt;
+PRIVATE_KEY=&lt;path-to-your-privatekey.pem&gt;
+</code></p></li><li><p>LTI Producer Configuration. The consumer connects with multiple LooWID rooms depends on LTI context, the first user with OWNER<em>ROLE will be the room owner. 
+The loowid producer entrypoint is configured with LTI</em>PATH (/lti). Set LTI_DOMAIN if your host is behind a proxy with other domain than req.headers.host. <a href="https://github.com/loowid/loowid/wiki/Setting-up-IMS-LTI-connection">See more about LTI</a></p><p><code>
+LTI_KEY=&lt;lti-key&gt;
+LTI_SECRET=&lt;lti-secret&gt;
+LTI_PATH=&lt;lti-url&gt;
+LTI_DOMAIN=&lt;lti-host&gt;
+LTI_OWNER_ROLES=&lt;lti-owner-role1&gt;,&lt;lti-owner-role2&gt;,...
+</code></p></li><li><p>Control host and port for websocket connection. </p><p><code>
+WS_HOST=&lt;websocket-host-server&gt;
+WS_PORT=&lt;websocket-port-server&gt;
+</code></p></li><li><p>MongoDB URL. By Default loowid uses localhost to connect with mongodb, set one of this variables to connect to another URL. </p><p><code>
+MONGOLAB_URI=&lt;MongoDB URI&gt;
+MONGOHQ_URL=&lt;MongoDB URL&gt;
+</code></p></li></ol></section>
+<section class="entry">
+<p>Maybe you want to use your LooWID server for education and you&#39;d like to use it with the LMS (Learning Management System) of your institution. You are lucky because LooWID has the ability to communicate with those systems like Moodle, Sakai, Canvas, Blackboard, Drupal... using the standard <strong>IMS LTI (IMS Learning Tool Interoperability) v1.1</strong></p>
+
+<h2>What is IMS LTI?</h2>
+
+<p>IMS LTI is an standard that allows to integrate remote learning applications with LMS, portals or educational environments. Those applications are called LTI producers. Systems that uses that applications are called LTI consumers.</p>
+
+<p>If you want to go deeper in the standard I recommend to see this Dr.Chuck Severance&#39;s <a href="https://vimeo.com/34168694">video</a> explaining </p>
+
+<h2>How to enable LTI on LooWID</h2>
+
+<p>The consumer connects with multiple LooWID rooms depending on LTI context, the first user with OWNER_ROLE will be the room owner. You must set the value of the environment variables.</p>
+
+<p><code>
+LTI_KEY=&lt;lti-key&gt;
+LTI_SECRET=&lt;lti-secret&gt;
+LTI_PATH=&lt;lti-url&gt;
+LTI_DOMAIN=&lt;lti-host&gt;
+LTI_OWNER_ROLES=&lt;lti-owner-role1&gt;,&lt;lti-owner-role2&gt;,...  
+</code></p>
+
+<ul><li><strong>LTI_KEY</strong>: A key for identify your service</li><li><strong>LTI_SECRET</strong>: The secret to authenticate the service connection</li><li><strong>LTI_PATH</strong> (optional): Relative endpoint path where the LTI service is listening.</li><li><strong>LTI_DOMAIN</strong>: An alternative host name where your service is responding. Useful if your LooWID instance is running in under special proxy configuration. </li><li><strong>LTI<em>OWNER</em>ROLES</strong>: A &#39;,&#39; separated list with the role names of the LMS that can be as LooWID room owner.</li></ul>
+
+<h2>How do I configure my LMS.</h2>
+
+<p>Depending on the LMS  where you want to add LTI connection you will have follow different steps in order to fill <strong>LTI key</strong>, <strong>LTI secret</strong> and the <strong>launch URL</strong>.</p>
+
+<p>The first two parameters respond to the ones you configured in the previous step. The launch URL will be <code>https://&lt;your-loowid-intance-domain&gt;/lti</code> . Take care if you changed the parameter LTI_PATH it should be the path of the launch url. You should check the option that allows sending names and emails to the tool. It&#39;s necessary to get real names and avatars.</p>
+
+<p>You can see more detailed information on:</p>
+
+<ul><li><a href="https://trunk-oracle.nightly.sakaiproject.org/portal/help/TOCDisplay/content.hlp?docId=howdoiconfiguretheexternaltoolltisettings">How to configure an external tool in Sakai</a></li><li><a href="https://docs.moodle.org/22/en/External_tool_settings">How to configure an external tool on Moodle</a></li><li><a href="http://www.edu-apps.org/tutorials.html#canvas">How to configure an external tool on Canvas</a></li></ul></section>
+<section class="entry">
+<p>Now LooWID is * translated to 4 languages, Catalan, English, German and Spanish. The language of the LooWID interface changes depending on browser preferences. </p>
+
+<p>We use an external application to handle all the translations of LooWID. It&#39;s another opensource project called <strong><a href="https://github.com/nijel/weblate">Weblate</a></strong>. We run on a hosted server offered by Weblate people, there you will find another opensource projects to participate with.</p>
+
+<p>If you are interested in adding a translation or improve the existing ones you can use Weblate platform at: https://hosted.weblate.org/engage/loowid/ . We&#39;ll incorporate your translations as soon as possible.</p></section>
+	</main>
+	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="js/docs.js"></script>
+</body>
+</html>
