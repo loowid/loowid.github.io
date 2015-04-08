@@ -1,0 +1,16 @@
+@mixin clip-path($clip) {
+  -webkit-clip-path: $clip;
+  -moz-clip-path: $clip;
+  -ms-clip-path: $clip;
+  clip-path: $clip;
+}
+
+$font: "Noto Sans", sans-serif;
+$headerfont: "Source Sans Pro",sans-serif;
+$prefont: "Inconsolata", monospace;
+
+$bgcolor:   #F8F8F8;
+$maincolor: #BF360C;
+$secondarycolor: #412714;
+$textcolor: #393939;
+$linkcolor: #2980b9;

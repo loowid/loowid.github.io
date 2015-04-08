@@ -1,26 +1,18 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
 @import "compass/reset";
 @import "compass/css3";
+@import "customization";
 
-$font: "Noto Sans", sans-serif;
-$headerfont: "Source Sans Pro",sans-serif;
-$prefont: "Inconsolata", monospace;
+@import "items/navigation";
+@import "items/fullscreen";
+@import "items/text";
+@import "items/another";
 
-$bgcolor:   #F8F8F8;
-$maincolor: #BF360C;
-$secondarycolor: #412714;
-$textcolor: #393939;
-$linkcolor: #2980b9;
 
 body{
-	font-size: 14px;
+	font-size: 1em;
 	background: $bgcolor;
 	color: $textcolor;
-	line-height: 1.5;
+	line-height: 1.55;
 	font-family: $font;
 }
 
@@ -90,10 +82,4 @@ main#docs{
 			@include box-shadow(inset 0 0 5px 0 rgba(0,0,0, 0.3) );
 		}
 	}
-}
-
-section{
-	max-width: 760px;
-	margin: 0 auto;
-	padding: 0 1em;
 }

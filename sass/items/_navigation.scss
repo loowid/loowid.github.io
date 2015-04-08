@@ -1,0 +1,36 @@
+h1#logo{
+	background: url("http://www.loowid.com/img/hero.png") no-repeat center;
+	border: 2px solid rgba(0,0,0,.1);
+	height: 3.2em;
+	left: 1.4em;
+	overflow: hidden;
+	position: fixed;
+	text-indent: -1000px;
+	top: 0.5em;
+	width: 3.2em;
+	z-index: 150;
+	@include border-radius(3.2em);
+}
+
+#mainmenu{
+	position: fixed;
+	top: 0;
+	left: 3em;
+	z-index: 99;
+	min-height: calc(100% - 1em );
+	width: 10em;
+	background: rgba( 0,0,0, 0.15 );
+	padding: 8em 0.5em 0 0.5em;
+	ul{
+		margin: 4em 0 0 0;
+		li{
+			margin: 0 0 0.8em 0;
+			&.toHome{
+				margin: 0 0 3em 0;
+			}
+		}
+		a{
+			text-transform: uppercase;
+		}
+	}
+}
